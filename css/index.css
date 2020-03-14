@@ -1,0 +1,226 @@
+* {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans' sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+main {
+    height: auto !important;
+}
+
+/*-----Popular Courses Start-----*/
+
+.popular-courses {
+    height: auto;
+    background-image: url('../images/pattern.png');
+}
+
+.popular-course-header .container .row {
+    position: relative;
+    padding: 50px 0;
+}
+
+.head, .category {
+    position: absolute;
+}
+
+.head {
+    left: 1%;
+}
+
+.head h3 {
+    font-weight: 600;
+}
+
+.category {
+    right: 1%;
+}
+
+.category ul {
+    display: flex;
+}
+
+.category ul li {
+    padding: 12px 5% 12px 4%;
+    cursor: pointer;
+    background-color: #ffffff;
+    margin-right: 2px;
+    font-size: .9rem;
+}
+
+.category ul .active {
+    color: white;
+    background-color: #1CB2C7;
+}
+
+.post-img {
+    height: 235px;
+}
+
+.narrow {
+    width: 100%;
+    height: 235px;
+    background-color: rgb(44, 175, 193);
+    position: absolute;
+    opacity: .5;
+    transition: all 2s;
+    display: none;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-title a {
+    color: #222222;
+}
+
+.card .btn-eye {
+    position: absolute;
+    z-index: 1;
+    top: 24%;
+    left: 42%;
+    display: none;
+}
+
+.card .btn-eye a, .btn-eye .fa-eye {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.course-author a {
+    color: #222222;
+    font-weight: 600;
+}
+
+.course-author span {
+    font-size: .8rem;
+}
+
+.course-author span, .card-text, .post-meta ul li {
+    color: #777777;
+}
+
+.course-meta {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.course-author {
+    position: absolute;
+    left: 0;
+}
+
+.price {
+    position: absolute;
+    right: 0;
+    font-weight: 600;
+    color: #222222;
+}
+
+.course-author a span {
+    color: black;
+}
+
+.post-meta {
+    padding-bottom: 40px;
+}
+
+.post-meta ul {
+    position: relative;
+}
+
+.post-meta ul li {
+    position: absolute;
+}
+
+.post-meta ul li:first-child {
+    left: 0;
+}
+
+.post-meta ul li:nth-child(2) {
+    left: 38%;
+}
+
+.post-meta ul li:last-child {
+    right: 0;
+    cursor: pointer;
+}
+
+.post-meta ul li i {
+    color: #1CB3C8;
+}
+
+/*--Hover--*/
+
+.card:hover .narrow {
+    display: block;
+    transition: .5s;
+}
+
+.card:hover .btn-eye {
+    display: block;
+    transition: .5s;
+}
+
+.card-title a:hover {
+    color: #1CB3C8;
+    transition: .5s;
+}
+
+@media (max-width: 575.98px) {
+    .popular-course-header .container .row {
+        padding: 60px 0;
+    }
+    .head {
+        top: 0;
+        left: 30%;
+    }
+    .category {
+        bottom: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .popular-course-header .container .row {
+        padding: 60px 0;
+    }
+    .head {
+        top: 0;
+        left: 30%;
+    }
+    .category {
+        bottom: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .head {
+        left: 0%;
+    }
+    .category {
+        right: 0;
+    }
+    .category ul li {
+        padding: 10px;
+    }
+    .popular-course-body .container {
+        min-width: 95% !important;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}
