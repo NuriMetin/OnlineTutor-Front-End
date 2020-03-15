@@ -21,46 +21,38 @@ main {
 /*-----Popular Courses Start-----*/
 
 .popular-courses {
-    height: auto;
-    background-image: url('../images/pattern.png');
+    background-image: url("../images/pattern.png");
 }
 
-.popular-course-header .container .row {
-    position: relative;
-    padding: 50px 0;
+.popular-course-header {
+    padding: 25px 0;
 }
 
-.head, .category {
-    position: absolute;
-}
-
-.head {
-    left: 1%;
-}
-
-.head h3 {
+.popular-course-header .head h3 {
     font-weight: 600;
 }
 
-.category {
-    right: 1%;
+.popular-course-header .category {
+    text-align: right !important;
 }
 
-.category ul {
+.popular-course-header .category ul {
+    position: absolute;
+    right: 2%;
     display: flex;
 }
 
-.category ul li {
-    padding: 12px 5% 12px 4%;
-    cursor: pointer;
+.popular-course-header .category ul li {
+    padding: 12px;
     background-color: #ffffff;
-    margin-right: 2px;
+    cursor: pointer;
+    margin: 0 1px;
     font-size: .9rem;
 }
 
 .category ul .active {
-    color: white;
-    background-color: #1CB2C7;
+    background-color: #1BAEC3 !important;
+    color: #ffffff;
 }
 
 .post-img {
@@ -179,45 +171,38 @@ main {
 }
 
 @media (max-width: 575.98px) {
-    .popular-course-header .container .row {
-        padding: 60px 0;
+    .popular-course-header {
+        padding: 20px 0 50px 0;
     }
-    .head {
-        top: 0;
-        left: 30%;
+    .popular-course-header .head {
+        text-align: center;
     }
-    .category {
-        bottom: 0;
+    .popular-course-header .category {
+        padding-top: 15px;
+        right: 4%;
+    }
+    .post-img {
+        height: 260px;
+    }
+    .narrow {
+        height: 260px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .popular-course-header .container .row {
-        padding: 60px 0;
+    .popular-course-header {
+        padding: 20px 0 50px 0;
     }
-    .head {
-        top: 0;
-        left: 30%;
+    .popular-course-header .head {
+        text-align: center;
     }
-    .category {
-        bottom: 0;
+    .popular-course-header .category {
+        padding-top: 15px;
+        right: 8%;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .head {
-        left: 0%;
-    }
-    .category {
-        right: 0;
-    }
-    .category ul li {
-        padding: 10px;
-    }
-    .popular-course-body .container {
-        min-width: 95% !important;
-    }
-}
+@media (min-width: 768px) and (max-width: 991.98px) {}
 
 @media (min-width: 992px) {}
 
