@@ -170,6 +170,30 @@ main {
     transition: .5s;
 }
 
+.display-none {
+    display: none !important;
+}
+
+#more-category {
+    display: none !important;
+    z-index: 1;
+    margin-top: 12px;
+    background-color: #ffffff;
+}
+
+.more-category-li {
+  
+    margin: 0 !important;
+    font-size: .9rem;
+}
+.more-category-hr{
+    padding: 0 !important;
+    margin: 0 !important;
+    color: aliceblue !important;
+}
+.more:hover>#more-category{
+    display: block !important;
+}
 @media (max-width: 575.98px) {
     .popular-course-header {
         padding: 20px 0 50px 0;
@@ -180,6 +204,9 @@ main {
     .popular-course-header .category {
         padding-top: 15px;
         right: 4%;
+    }
+    .popular-course-header .category ul li {
+        padding: 12px;
     }
     .post-img {
         height: 260px;
