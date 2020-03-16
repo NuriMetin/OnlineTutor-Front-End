@@ -17,42 +17,21 @@ a:hover {
 main {
     height: auto !important;
 }
+/*----Slider start------*/
 
 /*-----Popular Courses Start-----*/
 
-.popular-courses {
+.courses {
     background-image: url("../images/pattern.png");
 }
 
-.popular-course-header {
-    padding: 25px 0;
+.courses .head {
+    width: 100%;
+    text-align: center;
 }
 
-.popular-course-header .head h3 {
+.head h3 {
     font-weight: 600;
-}
-
-.popular-course-header .category {
-    text-align: right !important;
-}
-
-.popular-course-header .category ul {
-    position: absolute;
-    right: 2%;
-    display: flex;
-}
-
-.popular-course-header .category ul li {
-    padding: 12px;
-    background-color: #ffffff;
-    cursor: pointer;
-    margin: 0 1px;
-    font-size: .9rem;
-}
-
-.category ul .active {
-    background-color: #1BAEC3 !important;
-    color: #ffffff;
 }
 
 .post-img {
@@ -68,7 +47,16 @@ main {
     transition: all 2s;
     display: none;
 }
-
+.category{
+    position: absolute;
+    top: 220px;
+    text-transform: lowercase;
+    color: #ffffff;
+    padding: 3px 10px;
+    right: 10%;
+    border-radius: 10%;
+    background-color: red;
+}
 .card-title {
     font-weight: 600;
 }
@@ -170,64 +158,24 @@ main {
     transition: .5s;
 }
 
-.display-none {
-    display: none !important;
+.course-author a:hover {
+    color: #1CB3C8;
+    transition: .5s;
 }
 
-#more-category {
-    display: none !important;
-    z-index: 1;
-    margin-top: 12px;
-    background-color: #ffffff;
-}
-
-.more-category-li {
-  
-    margin: 0 !important;
-    font-size: .9rem;
-}
-.more-category-hr{
-    padding: 0 !important;
-    margin: 0 !important;
-    color: aliceblue !important;
-}
-.more:hover>#more-category{
-    display: block !important;
-}
 @media (max-width: 575.98px) {
-    .popular-course-header {
-        padding: 20px 0 50px 0;
-    }
-    .popular-course-header .head {
-        text-align: center;
-    }
-    .popular-course-header .category {
-        padding-top: 15px;
-        right: 4%;
-    }
-    .popular-course-header .category ul li {
-        padding: 12px;
-    }
     .post-img {
         height: 260px;
     }
     .narrow {
         height: 260px;
     }
+    .category{
+        top: 245px;
+    }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .popular-course-header {
-        padding: 20px 0 50px 0;
-    }
-    .popular-course-header .head {
-        text-align: center;
-    }
-    .popular-course-header .category {
-        padding-top: 15px;
-        right: 8%;
-    }
-}
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
 @media (min-width: 768px) and (max-width: 991.98px) {}
 
