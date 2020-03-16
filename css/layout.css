@@ -20,6 +20,7 @@ header {
     width: 100%;
     height: 100px;
     background-color: #FCFCFC;
+    /* background-color: #FCFCFC;*/
 }
 
 .container-fluid {
@@ -31,7 +32,11 @@ header {
 /*   Site logo   */
 
 .site-logo {
-    width: 16%;
+    width: 6%;
+}
+
+.site-logo img {
+    height: 50px;
 }
 
 /*  Site menu   */
@@ -42,7 +47,7 @@ header {
 
 .site-menu {
     padding-top: 12px;
-    width: 54%;
+    width: 64%;
     padding-left: 5%;
 }
 
@@ -50,11 +55,12 @@ header {
     padding: 0 3% 20px 3%;
 }
 
-.menu-list a {
+.menu-list a, .menu-list span {
     font-weight: 600;
     font-size: .9rem;
     text-transform: uppercase;
     color: #333333;
+    cursor: pointer;
 }
 
 .fa-caret-down {
@@ -77,6 +83,10 @@ header {
     font-size: .9rem;
     font-weight: 400;
     text-transform: capitalize;
+}
+
+.menu-element .fa-shopping-cart {
+    font-size: 1.2rem;
 }
 
 hr {
@@ -321,6 +331,9 @@ footer .fas {
 
 @media (min-width: 992px) and (max-width: 1199px) {
     /*   Header   */
+    .site-logo {
+        padding-left: 3%;
+    }
     .txbx-search {
         width: 10rem;
     }
@@ -333,17 +346,18 @@ footer .fas {
     .menu-list:hover>.sub-menu {
         display: block;
     }
-
     .login-modal {
         left: 26%;
         width: 50%;
     }
-
     /*----Footer----*/
 }
 
 @media (min-width: 1200px) {
     /*----Header----*/
+    .site-logo {
+        padding-left: 3%;
+    }
     .container-fluid {
         width: 87%;
     }

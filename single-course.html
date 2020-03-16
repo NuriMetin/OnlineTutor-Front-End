@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/sosial.css">
+    <link rel="stylesheet" href="css/single-course.css">
+</head>
+
+<body>
+    <!-- Header started -->
+    <header>
+        <nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <!--  Site logo-->
+                    <div class="site-logo">
+                        <a href="index.html"><img src="images/logo.png" alt="site logo"></a>
+                    </div>
+
+                    <div class="menu-bar" id="menu_bar">
+                        <i class="fas fa-bars"></i>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="site-menu" id="site_menu">
+                        <ul class="row">
+                            <li class="menu-list"><a href="#" class="menu-element">Ev</a></li>
+                            <li class="menu-list"><a href="#" class="menu-element">Haqqımızda</a></li>
+                            <li class="menu-list">
+                                <span  class="menu-element" id="course">Kurslar<i
+                                        class="fas fa-caret-down"></i></span>
+                                <ul class="sub-menu" id="course_submenu">
+                                    <li><a href="courses.html">Bütün kurslar</a></li>
+                                    <hr>
+                                    <li><a href="#">Sənin kursların</a></li>
+                                    <hr>
+                                    <li><a href="#">Kurs yarat</a></li>
+                                    <hr>
+                                    <li><a href="#">Pulsuz kurslar</a></li>
+                                    <hr>
+                                    <li><a href="#">Ödənişli kurslar</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-list">
+                                <span  class="menu-element" id="categories">Kateqoriya<i
+                                        class="fas fa-caret-down"></i></span>
+                                <ul class="sub-menu" id="categories_submenu">
+                                    <li><a href="#">Bakalavr</a></li>
+                                    <hr>
+                                    <li><a href="#">Magistr</a></li>
+                                    <hr>
+                                    <li><a href="#">Abituriyent</a></li>
+                                    <hr>
+                                    <li><a href="#">MIQ</a></li>
+                                    <hr>
+                                    <li><a href="#">DQI</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-list"><a href="#" class="menu-element">Əlaqə</a></li>
+                            <li class="menu-list">
+                                <a href="#" class="menu-element"><i class="fas fa-shopping-cart"
+                                        style="color: #333333;"></i><sup style="color: #E84118;">56</sup></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="search-box" id="search_box">
+                        <form method="post">
+                            <input class="txbx-search" type="search" placeholder="Axtar...">
+                            <button class="btn-search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="btn-login">
+                        <button id="btn_login" class="btn btn-primary">Giriş</button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="login-modal" id="login_form">
+            <h3>Login</h3><i id="close_modal" class="fas fa-times"></i>
+            <form method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="email" placeholder="Email">
+                    <input class="form-control" type="password" placeholder="Password">
+                    <input type="checkbox"><span> Məni xatırla</span>
+                    <input style="display: block;" type="submit" value="Login" class="btn btn-primary">
+                </div>
+            </form>
+            <div class="account">
+                <span>Parolu unutdunuz? <a href="#"> Sıfırla</a></span>
+                <span>Hesabınız yoxdur? <a href="#"> Qeydiyatdan keç</a></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header ended -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="left-container col-lg-3">
+                    <ul>
+                        <li>Videolar<span>15</span></li>
+                        <li>Didaktik material<span>7</span></li>
+                        <li>Kuiz<span>4</span></li>
+                    </ul>
+                    <a href="#" class="btn-left-container">Videolara get</a>
+                </div>
+                <div class="right-container col-lg-9">
+                    <div class="header">
+                        <div class="author">
+                            <img src="images/author.jpg" alt="">
+                            <span>Brandon Peay</span>
+                        </div>
+                        <div class="category">
+                            <span>Kateqoriya:</span><span style="color: #333333; font-weight: 600;">Magistr</span>
+                        </div>
+                    </div>
+                    <p class="course-title">The most impressive is collection of share me online college courses</p>
+                    <span class="course-price">$500.00</span>
+                    <div class="course-image">
+                        <img src="images/img9.jpg" alt="">
+                    </div>
+                    <div class="course-tab-content">
+                        <ul id="tab-content">
+                            <li><span>Sillabus</span><div class="line"></div></li>
+                            <li><span>Kuiz</span><div class=""></div></li>
+                            <li><span>Video</span><div class=""></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer started -->
+    <footer>
+        <div class="container">
+
+            <!-- Top footer -->
+            <div class="top-footer">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#"><span><i class="fas fa-minus"></i></span>About Us</a></li>
+                            <li><a href="#"><span><i class="fas fa-minus"></i></span>Blog</a></li>
+                            <li><a href="#"><span><i class="fas fa-minus"></i></span>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="#"><span><i class="fas fa-minus"></i></span>About Us</a></li>
+                            <li><a href="#"><span><i class="fas fa-minus"></i></span>Career</a></li>
+                            <li><a href="#"><span><i class="fas fa-minus"></i></span>Resource Center</a></li>
+                            <li><a href="#"><span><i class="fas fa-minus"></i></span>Guides</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#"><span><i class="fas fa-paper-plane"></i></span>Huseyn Javid street 25</a>
+                            </li>
+                            <li><a href="#"><span><i class="fas fa-phone"></i></span>+994 70 200 92 60</a></li>
+                            <li><a href="#"><span><i class="fas fa-envelope"></i></span>matinnn@code.edu.az</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Get in touch</h4>
+                        <ul>
+                            <li><a href="#"><span><i class="fas fa-minus"></i></span>Privacy Policy</a></li>
+                            <li><a href="#"><span><i class="fas fa-minus"></i></span>Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom footer -->
+            <div class="bottom-footer">
+                <div class="col-md-6 col-xs-12">
+                    <p>© 2020, Online Tutor. All rights reserved.</p>
+                </div>
+                <div class="sosial col-md-6 col-xs-12">
+                    <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
+                        <li><a href="#" class="facebook">
+                                <div class="front"><i class="fab fa-facebook-f"></i></div>
+                                <div class="back"><i class="fab fa-facebook-f"></i></div>
+                            </a></li>
+                        <li><a href="#" class="twitter">
+                                <div class="front"><i class="fab fa-twitter"></i></div>
+                                <div class="back"><i class="fab fa-twitter"></i></div>
+                            </a></li>
+                        <li><a href="#" class="instagram">
+                                <div class="front"><i class="fab fa-instagram"></i></div>
+                                <div class="back"><i class="fab fa-instagram"></i></div>
+                            </a></li>
+                        <li><a href="#" class="pinterest">
+                                <div class="front"><i class="fab fa-linkedin-in"></i></div>
+                                <div class="back"><i class="fab fa-linkedin-in"></i></div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer ended -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/index.js"></script>
+</html>
